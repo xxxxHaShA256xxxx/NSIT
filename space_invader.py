@@ -2,6 +2,10 @@ import pygame
 import random
 import space
 import sys
+from pygame import mixer
+
+mixer.music.load("background.wav")
+mixer.music.play(-1)
 
 class joueur:
     def __init__(self):
@@ -124,4 +128,3 @@ while running :
         screen.blit(ennemi.image,[ennemi.depart, ennemi.hauteur]) 
         
     pygame.display.update() 
-
